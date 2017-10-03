@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="Dao" class="com.mihir.bookingApp.dao.DAO" ></bean>
+	<bean id="hotelDao" class="com.mihir.bookingApp.dao.HotelDAO" ></bean>
+	<bean id="userDao" class="com.mihir.bookingApp.dao.UserDAO" ></bean>
+	<bean id="bookingDao" class="com.mihir.bookingApp.dao.BookingDAO" ></bean>
+	<bean id="commentDao" class="com.mihir.bookingApp.dao.CommentDAO" ></bean>
+	<bean id="roomDao" class="com.mihir.bookingApp.dao.RoomDAO" ></bean>
+	<bean id="userValidator" class="com.mihir.bookingApp.validator.UserValidator" ></bean>
+	
+	
+
+
+	
+
+		
+</beans>

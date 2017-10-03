@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hoteldb</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2dll.import_files">import.sql</property>
+		<property name="connection.autocommit">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.mihir.bookingApp.model.Authority" />
+		<mapping class="com.mihir.bookingApp.model.Booking" />
+		<mapping class="com.mihir.bookingApp.model.Category" />
+		<mapping class="com.mihir.bookingApp.model.Comment" />
+		<mapping class="com.mihir.bookingApp.model.Hotel" />
+		<mapping class="com.mihir.bookingApp.model.Image" />
+		<mapping class="com.mihir.bookingApp.model.Room" />
+		<mapping class="com.mihir.bookingApp.model.RoomType" />
+		<mapping class="com.mihir.bookingApp.model.User" />				
+		
+    </session-factory>
+</hibernate-configuration>
